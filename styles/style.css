@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root {
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+
+    --cor-primaria: #0F0F0F;
+    --cor-secundaria: #005B41;
+    --cor-terciaria: #008170;
+    --cor-hover: #232D3F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+    color: white;
+}
+
+strong {
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+.cabecalho_menu_link:hover {
+    color: var(--cor-terciaria);
+}
+
+.cabecalho_redes {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+    
+}
+
+.apresentacao_texto {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.apresentacao_texto_titulo {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+}
+
+.apresentacao_texto_paragrafo {
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+
+.apresentacao_imagem {
+    width: 500px;
+    border-radius: 16px;
+    margin-right: 80px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: var(--cor-terciaria);
+    padding: 15px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rodape_bibliografia {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
